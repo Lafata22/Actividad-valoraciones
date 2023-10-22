@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>BOLETIN DE VALORACIONES</title>
+    <link rel="stylesheet" href="styleVal.css">
+    <script src="functionVal.js"></script>
+    
+</head>
+<body onload="crearVal('itemsVal', 0, 3)">
+
+    <p class="encabezado">
+        <h1>Institución educativa "Mi primer código"</h1>
+        <h2>Informe académico</h2>
+        <h3>Estudiante: Laura López</h3>
+        <h3>Grupo: 1D</h3>
+        <img src="carnet.jpg" alt="Foto Estudiante">
+    </p>
+    
+        <h2 class="titulo">Ingresa tus valoraciones:</h2>
+
+    <div id="itemsVal"></div>
+        <button onclick="promedio()" id="promedio">Calcular datos</button>
+    </div>  
+    
+    <div class="tabla">
+        <table>
+            <thead>
+                <tr>
+                    <th>Promedio</th>
+                    <th>Valoración más alta</th>
+                    <th>¿Debe aplazar?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="promedioVal"></td>
+                    <td id="notaAlta"></td>
+                    <td id="aplazo"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
